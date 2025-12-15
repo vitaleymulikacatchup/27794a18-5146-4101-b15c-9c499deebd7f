@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
@@ -132,8 +132,8 @@ export default function LandingPage() {
 
       <div id="testimonials" data-section="testimonials">
         <TestimonialCardNine
-          title="Loved by Our Guests"
-          description="See what our valued customers have to say about their Santa dining experience"
+          title="Our Portfolio Companies"
+          description="Meet the innovative brands and startups we've partnered with and helped grow"
           testimonials={[
             {
               id: "1",
@@ -171,6 +171,7 @@ export default function LandingPage() {
           variant="card"
           textboxLayout="default"
           useInvertedBackground="noInvert"
+          carouselMode="buttons"
         />
       </div>
 

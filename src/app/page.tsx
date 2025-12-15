@@ -5,7 +5,7 @@ import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
 import ParallaxAbout from '@/components/sections/about/ParallaxAbout';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
-import TestimonialCardNine from '@/components/sections/testimonial/TestimonialCardNine';
+import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
@@ -125,44 +125,51 @@ export default function LandingPage() {
       </div>
 
       <div id="testimonials" data-section="testimonials">
-        <TestimonialCardNine
-          title="Our Portfolio Companies"
-          description="Meet the innovative brands and startups we've partnered with and helped grow"
+        <TestimonialCardFive
+          title="What Our Guests Say"
+          description="Discover what makes Santa a favorite destination for unforgettable dining experiences"
           testimonials={[
             {
               id: "1",
+              name: "Marco Rossi, Regular Guest",
+              date: "Date: 28 October 2024",
+              title: "An absolutely exceptional dining experience",
               quote: "Santa has become our favorite restaurant. The food is absolutely exceptional and the staff makes you feel like family. Every visit is truly memorable.",
-              name: "Marco Rossi",
-              role: "Regular Guest",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810992355-358u3qkb.jpg",
-              imageAlt: "Marco Rossi"
+              tag: "Fine Dining",
+              avatarSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810992355-358u3qkb.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810992355-358u3qkb.jpg"
             },
             {
               id: "2",
+              name: "Elena Marino, Anniversary Celebration",
+              date: "Date: 15 October 2024",
+              title: "Perfect celebration venue",
               quote: "We celebrated our anniversary at Santa and it was perfect. The ambiance, the service, and especially the food were outstanding. Highly recommend!",
-              name: "Elena Marino",
-              role: "Anniversary Celebration",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810993664-h6i7u6sh.jpg",
-              imageAlt: "Elena Marino"
+              tag: "Special Events",
+              avatarSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810993664-h6i7u6sh.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810993664-h6i7u6sh.jpg"
             },
             {
               id: "3",
+              name: "Giovanni & Sophie, Food Enthusiasts",
+              date: "Date: 22 September 2024",
+              title: "Authentic Italian excellence",
               quote: "The Italian cuisine here is authentic and beautifully presented. Every dish tells a story. This is fine dining done right.",
-              name: "Giovanni & Sophie",
-              role: "Food Enthusiasts",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810994695-irpsp29d.jpg",
-              imageAlt: "Giovanni & Sophie"
+              tag: "Cuisine",
+              avatarSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810994695-irpsp29d.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810994695-irpsp29d.jpg"
             },
             {
               id: "4",
+              name: "David Chen, Restaurant Critic",
+              date: "Date: 05 September 2024",
+              title: "Excellence in every detail",
               quote: "I've dined at many restaurants, but Santa stands out. The attention to detail and passion for excellence is evident in everything they do.",
-              name: "David Chen",
-              role: "Restaurant Critic",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810995491-q49uvoyh.jpg",
-              imageAlt: "David Chen"
+              tag: "Premium",
+              avatarSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810995491-q49uvoyh.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810995491-q49uvoyh.jpg"
             }
           ]}
-          variant="card"
           textboxLayout="default"
           useInvertedBackground="noInvert"
         />

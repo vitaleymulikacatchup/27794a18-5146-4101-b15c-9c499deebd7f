@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import HeroLogoBillboardSplitImage from '@/components/sections/hero/HeroLogoBillboardSplitImage';
-import MediaGridAbout from '@/components/sections/about/MediaGridAbout';
+import ParallaxAbout from '@/components/sections/about/ParallaxAbout';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import TestimonialCardNine from '@/components/sections/testimonial/TestimonialCardNine';
 import FaqBase from '@/components/sections/faq/FaqBase';
@@ -58,37 +58,15 @@ export default function LandingPage() {
       </div>
 
       <div id="about" data-section="about">
-        <MediaGridAbout
-          title="Welcome to Santa"
-          description="Since opening our doors, Santa has been dedicated to crafting exceptional dining experiences. Our team combines traditional Italian culinary techniques with modern innovation, sourcing the finest ingredients to create unforgettable meals. Every visit celebrates the art of hospitality and the joy of sharing great food with loved ones."
-          mediaItems={[
+        <ParallaxAbout
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810989917-dzs36xwx.jpg"
+          imageAlt="Professional chef cooking in kitchen"
+          buttons={[
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810989917-dzs36xwx.jpg",
-              imageAlt: "Professional chef cooking in kitchen"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810990991-o9sf1f9y.jpg",
-              imageAlt: "Romantic restaurant dining experience"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810986511-v8xswio8.jpg",
-              imageAlt: "Gourmet pasta dish"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810987640-bwtx1rxp.jpg",
-              imageAlt: "Premium steak fine dining"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810988869-7g0wj169.jpg",
-              imageAlt: "Seafood risotto luxury restaurant"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810985310-lfrtmyex.jpg",
-              imageAlt: "Fine dining restaurant ambiance"
+              text: "Discover More",
+              href: "#menu"
             }
           ]}
-          imagePosition="right"
-          useInvertedBackground="noInvert"
         />
       </div>
 

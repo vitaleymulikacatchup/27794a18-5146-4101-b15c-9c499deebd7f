@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
-import HeroLogoBillboardSplitImage from '@/components/sections/hero/HeroLogoBillboardSplitImage';
+import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
 import ParallaxAbout from '@/components/sections/about/ParallaxAbout';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import TestimonialCardNine from '@/components/sections/testimonial/TestimonialCardNine';
@@ -35,9 +35,9 @@ export default function LandingPage() {
       </div>
 
       <div id="hero" data-section="hero">
-        <HeroLogoBillboardSplitImage
-          logoText="SANTA"
-          description="Experience culinary excellence in an elegant setting. Santa brings together authentic Italian cuisine, impeccable service, and a welcoming atmosphere perfect for every occasion."
+        <HeroBillboardGallery
+          title="Experience Culinary Excellence"
+          description="Santa brings together authentic Italian cuisine, impeccable service, and a welcoming atmosphere perfect for every occasion."
           buttons={[
             {
               text: "Reserve Now",
@@ -48,12 +48,28 @@ export default function LandingPage() {
               href: "#menu"
             }
           ]}
-          layoutOrder="default"
-          splitImageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810985310-lfrtmyex.jpg"
-          splitImageAlt="Elegant Santa restaurant dining room"
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810985310-lfrtmyex.jpg"
-          imageAlt="Fine dining restaurant ambiance"
-          frameStyle="card"
+          mediaItems={[
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810985310-lfrtmyex.jpg",
+              imageAlt: "Elegant Santa restaurant dining room"
+            },
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810986511-v8xswio8.jpg",
+              imageAlt: "Pasta Carbonara signature dish"
+            },
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810987640-bwtx1rxp.jpg",
+              imageAlt: "Fine dining ambiance"
+            },
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810988869-7g0wj169.jpg",
+              imageAlt: "Seafood Risotto fresh catch"
+            },
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810989917-dzs36xwx.jpg",
+              imageAlt: "Professional chef cooking in kitchen"
+            }
+          ]}
         />
       </div>
 

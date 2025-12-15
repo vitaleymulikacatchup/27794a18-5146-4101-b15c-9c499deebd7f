@@ -4,11 +4,12 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
 import ParallaxAbout from '@/components/sections/about/ParallaxAbout';
-import ProductCardFour from '@/components/sections/product/ProductCardFour';
+import FeatureCardFour from '@/components/sections/feature/FeatureCardFour';
 import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
+import { Utensils, Flame, Star } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -87,36 +88,26 @@ export default function LandingPage() {
       </div>
 
       <div id="menu" data-section="menu">
-        <ProductCardFour
+        <FeatureCardFour
           title="Featured Dishes"
           description="Discover our most celebrated creations, handcrafted with the finest ingredients"
-          products={[
+          features={[
             {
-              id: "pasta-carbonara",
-              name: "Pasta Carbonara",
-              price: "$28",
-              variant: "Classic Italian Recipe",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810986511-v8xswio8.jpg",
-              imageAlt: "Pasta Carbonara"
+              title: "Pasta Carbonara",
+              description: "Classic Italian Recipe - Creamy, authentic carbonara made with premium eggs, guanciale, and Pecorino Romano cheese.",
+              icon: Utensils
             },
             {
-              id: "ribeye-steak",
-              name: "Ribeye Steak",
-              price: "$52",
-              variant: "Prime Cut, Perfectly Seared",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810987640-bwtx1rxp.jpg",
-              imageAlt: "Ribeye Steak"
+              title: "Ribeye Steak",
+              description: "Prime Cut, Perfectly Seared - Tender, marbled ribeye cooked to perfection and finished with garlic butter.",
+              icon: Flame
             },
             {
-              id: "seafood-risotto",
-              name: "Seafood Risotto",
-              price: "$42",
-              variant: "Fresh Catch of the Day",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34yEatLQt6B9A82mZgfqKsKaLO9/uploaded-1765810988869-7g0wj169.jpg",
-              imageAlt: "Seafood Risotto"
+              title: "Seafood Risotto",
+              description: "Fresh Catch of the Day - Creamy arborio rice with shrimp, scallops, and fresh seasonal seafood.",
+              icon: Star
             }
           ]}
-          gridVariant="three-columns-all-equal-width"
           animationType="slide-up"
           containerStyle="default"
           textboxLayout="default"

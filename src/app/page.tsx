@@ -171,7 +171,6 @@ export default function LandingPage() {
           variant="card"
           textboxLayout="default"
           useInvertedBackground="noInvert"
-          carouselMode="buttons"
         />
       </div>
 
